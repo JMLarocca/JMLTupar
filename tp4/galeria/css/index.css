@@ -1,10 +1,4 @@
-/* 
-    Document   : Estilos - Galería de Imágenes
-    Created on : 24-oct-2012, 14:14:22
-    Author     : Alberto N. Rodriguez <anrodriguez.click@gmail.com>
-    Description:
-        Purpose of the stylesheet follows.
-*/
+
 
 @-webkit-keyframes webkit-t1 {
     from    {-webkit-transform: rotate(0deg); background-color: gray; }
@@ -36,31 +30,34 @@
 
 
 
-div.body {
-    height: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #D8D8D8), color-stop(100%, #FFFFFF));
-    background: -moz-linear-gradient(top, #FCF9F9 0%, #FC9999 100%);
+body {
+       
+   background-color: pink;
+   
 }
 
 .cabecera {
-   -webkit-transition: font-size 3s ease-in;
-    -moz-transition:font-size 3s ease-in;
-    font-size: 8px;
+    text-align: center;
+    font-size: 18px;
 }
 
-.cabecera:hover { 
-   -webkit-transition: font-size 3s ease-in;
-    -moz-transition:font-size 3s ease-in;
-    font-size: 24px;
-}
+
 
 div.principal {
+    margin: 0px auto;
     width: 400px;
     height: 300px;
+  
 }
 
 div.principal:hover{
-    
+                                
+                -webkit-transition: -webkit-transform 0.2s ease-in;
+                -webkit-transform: scale(1.7,1.7)translate(0px,75px);
+         
+		 
+		-moz-transition: -moz-transform 0.2s ease-in;
+                -moz-transform: scale(1.7,1.7)translate(0px,75px);
 }
 
 .canvas {
@@ -72,7 +69,9 @@ div.principal:hover{
 
 div.indice {
     float: left;
+    margin: 35px;
     padding: 5px;
+    
     -webkit-border-radius: 10px;  
     -moz-border-radius: 10px;
 }
@@ -85,7 +84,6 @@ img {
     -webkit-transition: font-size 3s ease-in;
     -moz-transition:font-size 3s ease-in;
     width: 300px;
-
 }
 
 img {
@@ -96,12 +94,13 @@ img {
 img:hover{
     -webkit-animation: webkit-t1 0.5s linear;
     -moz-animation: moz-t1 0.5s linear;
-        
+    
     width: 100px;
     height: 100px;
 }
 
 div.botones {
+    
     margin: 15px;
 }
 boton {

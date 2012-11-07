@@ -10,7 +10,7 @@
                                 return function(e) {
                                             var span = document.createElement('span');
                                             span.innerHTML = ['<img class="img" src="', e.target.result,
-                                                            '" onmouseover="selectImagen(',"'",escape(theFile.name),"'",
+                                                            '" onclick="selectImagen(',"'",escape(theFile.name),"'",
                                                             "",')" ',
                                                             'id="',escape(theFile.name),
                                                             '" title="', escape(theFile.name), '"/>'].join('');
@@ -19,6 +19,7 @@
                            })(f);
     
         reader.readAsDataURL(f);
+        
     }
 }
 

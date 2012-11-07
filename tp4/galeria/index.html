@@ -3,13 +3,13 @@
 <head>
     <link href="css/index.css" rel="stylesheet" type="text/css"/>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Visualizaci&oacute;n e Interfaces - Galeria de Im&aacute;genes</title>
+    <title>Visualizacion e Interfaces - Galeria de Imagenes</title> 
 </head>
 
-    <body class="body" onload="init()">
+    <body class="body" onload="init()" style="background-color:  dimgrey">
     
     <div class="cabecera">
-        <p>Visualizaci&oacute;n e Interfaces - Galer&iacute;a de im&aacute;genes - Alberto N. Rodr&iacute;guez</p>
+        <p>Visualizacion e Interfaces - Galeria de imagenes</p>
     </div>
     
     <div class="principal">
@@ -17,25 +17,26 @@
             <p>Su navegador no soporta HTML5</p>
         </canvas>
     </div>
+  <center>
+        <div class="botones">
+            <button class="boton" id="original" onclick="setOriginal();">Original</button>
+            <button class="boton" id="blur" onclick="setBlur();">Blur</button>
+            <button class="boton" id="gris" onclick="setGris();">Gris</button>
+            <button class="boton" id="sepia" onclick="setSepia();">Sepia</button>
+            <button class="boton" id="brillo" onclick="setBrillo();">Brillo</button>
+            <button class="boton" id="flip" onclick="setFlip();">Espejo</button>
+        </div>
         
-    <div class="botones">
-        <button class="boton" id="original" onclick="setOriginal();">Original</button>
-        <button class="boton" id="blur" onclick="setBlur();">Blur</button>
-        <button class="boton" id="gris" onclick="setGris();">Gris</button>
-        <button class="boton" id="sepia" onclick="setSepia();">Sepia</button>
-        <button class="boton" id="brillo" onclick="setBrillo();">Brillo</button>
-        <button class="boton" id="flip" onclick="setFlip();">Espejo</button>
-    </div>
 
-    <div class="panelControl">
-        Cargar imagenes
-        <input id="archivo" class="boton" type="file" multiple name="files[]" dir="./img">
-    </div>
+        <div class="panelControl">
+            Cargar imagenes
+            <input id="archivo" class="boton" type="file" multiple name="files[]" dir="./img">
+         </div>
 
-    <div class="indice">
-        <output id="list"></output>
-    </div>
-
+        <div class="indice">
+            <output id="list"></output>
+        </div>
+</center>
 </body>
 </html>
 
