@@ -12,8 +12,7 @@
                                             span.innerHTML = ['<img class="img" src="', e.target.result,
                                                             '" onmouseover="selectImagen(',"'",escape(theFile.name),"'",
                                                             "",')" ',
-                                                            //'id="',escape(theFile.name),
-                                                            'id="',"img1",
+                                                            'id="',escape(theFile.name),
                                                             '" title="', escape(theFile.name), '"/>'].join('');
                                             document.getElementById('list').insertBefore(span, null);
                                         };
@@ -28,8 +27,7 @@ document.getElementById('archivo').addEventListener('change', handleFileSelect, 
 function selectImagen(id) {
     img.src         = document.getElementById(id).src;
     canvasPrincipal = img.src;
-    cambiarTransicion();
-  }
+      }
   
 function sleep(delay) {
     var start = new Date().getTime();
